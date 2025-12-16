@@ -12,6 +12,7 @@ import TermsScreen from './src/screens/TermsScreen';
 import CustomerManagementScreen from './src/screens/CustomerManagementScreen';
 import ClientDashboardScreen from './src/screens/ClientDashboardScreen';
 import EditProfileScreen from './src/screens/EditProfileScreen';
+import EmployeeDashboardScreen from './src/screens/EmployeeDashboardScreen';
 import EmployeeManagementScreen from './src/screens/EmployeeManagementScreen';
 import AboutAppScreen from './src/screens/AboutAppScreen';
 
