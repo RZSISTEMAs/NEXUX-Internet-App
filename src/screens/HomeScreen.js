@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 30,
         borderBottomRightRadius: 30,
         paddingHorizontal: 25,
-        paddingBottom: 80, // Increased space for text
+        paddingBottom: 130, // Much more space for text
         paddingTop: 10,
     },
     headerContent: { zIndex: 1 },
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     cardsContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: -50, // More aggressive overlap to sit ON the padding we added, but below text
+        marginTop: -60, // Adjusted to sit lower relative to the deeper header
         marginBottom: 25,
     },
     mainCard: {
