@@ -26,7 +26,7 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.mainContainer}>
       {/* Navbar Fixed at Top */}
       <View style={[styles.navbar, { paddingHorizontal: containerPadding }]}>
-        <Image source={{ uri: LOGO_URL }} style={styles.navLogo} />
+        <Image source={{ uri: LOGO_URL }} style={styles.navLogo} resizeMode="contain" />
         
         {/* Simple Mobile Menu Toggle could go here, for now keeping links simple */}
         <View style={styles.navLinks}>
@@ -196,7 +196,6 @@ const styles = StyleSheet.create({
   navLogo: {
     width: 120,
     height: 50,
-    resizeMode: 'contain',
   },
   navLinks: {
     flexDirection: 'row',
@@ -271,10 +270,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     paddingVertical: 16,
     borderRadius: 50,
-    shadowColor: "#007BFF",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 10,
+    borderRadius: 50,
+    boxShadow: '0px 4px 10px rgba(0, 123, 255, 0.4)',
     minWidth: 200,
     alignItems: 'center',
   },
@@ -313,10 +310,8 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     padding: 30,
     alignItems: 'center',
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.05,
-    shadowRadius: 20,
+    alignItems: 'center',
+    boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.05)',
     elevation: 2,
   },
   iconContainer: {

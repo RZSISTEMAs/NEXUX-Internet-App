@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, SafeAreaView, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function AboutAppScreen() {
   return (
