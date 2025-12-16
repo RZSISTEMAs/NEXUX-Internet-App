@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
   heroTextContent: { alignItems: 'center', maxWidth: 800 },
   heroTitle: {
       fontWeight: '900', color: '#FFFFFF', textAlign: 'center', 
-      marginBottom: 20, lineHeight: 1.1 
+      marginBottom: 30, lineHeight: 60, // Increased line height to stop overlap 
   },
   heroSubtitle: {
       color: '#B0BEC5', textAlign: 'center', marginBottom: 40, lineHeight: 1.5 
