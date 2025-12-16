@@ -103,7 +103,7 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-    mainContainer: { flex: 1, backgroundColor: '#FAFBFF' },
+    mainContainer: { flex: 1, backgroundColor: '#002147' }, // Changed to Blue
     
     // Header Styles
     headerContainer: {
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginTop: -60, // Adjusted to sit lower relative to the deeper header
         marginBottom: 25,
+        zIndex: 10, // Explicit z-index to ensure "in front"
     },
     mainCard: {
         backgroundColor: '#FFFFFF',
@@ -141,9 +142,9 @@ const styles = StyleSheet.create({
     },
     cardShadow: {
         elevation: 8,
-        shadowColor: '#0047AB',
+        shadowColor: '#000000', // Darker shadow for better pop on blue
         shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.1,
+        shadowOpacity: 0.2, // Increased opacity for contrast
         shadowRadius: 8,
     },
     iconCircle: {
@@ -158,7 +159,7 @@ const styles = StyleSheet.create({
     cardSubTitle: { fontSize: 11, color: '#8898AA' },
 
     // Grid Actions
-    sectionHeader: { fontSize: 18, fontWeight: 'bold', color: '#333', marginBottom: 15, marginLeft: 5 },
+    sectionHeader: { fontSize: 18, fontWeight: 'bold', color: '#FFF', marginBottom: 15, marginLeft: 5 }, // White text
     gridContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
